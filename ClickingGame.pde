@@ -1,13 +1,13 @@
 //global variables
 float value;
-float yasuo;
+ PImage yasuo;
 
 void setup() {
-  PImage yasuo;
+  
   yasuo = loadImage("Yasuo.jpg");
   size(600, 600);
   background(0);
-  
+  image(yasuo, 0, 0, 600, 600);
 }
 
 
@@ -16,10 +16,11 @@ void draw() {
 
 }
 void mouseClicked() {
-  if (mouseX > 300 && mouseX < 310 && mouseY > 300 && mouseY < 310) {
-    fill(255);
-  } else {
-    fill(0);
+  //Hat is clicked
+  if (mouseX > 500 && mouseX < 600 && mouseY > 100 && mouseY < 200) {
+   textSize(40);
+   text("Good Job!", 300, 300);
   }
+  
   
 }
