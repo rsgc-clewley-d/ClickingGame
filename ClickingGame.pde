@@ -52,6 +52,10 @@ void mouseClicked() {
     textSize(40);
     text("Good Job!", 210, 350);
   }
+  else if (mouseX > 490 && mouseX < 587 && mouseY > 245 && mouseY < 485) {
+   textSize(40);
+   text("Good Job!", 210, 350);
+  }
 }
 void mousePressed() { 
   // if your mouse is within the x and y values of the image, switch the background image. 
@@ -68,5 +72,7 @@ void mousePressed() {
   } else if (mouseX > 20 && mouseX < 72 && mouseY > 204 && mouseY < 223) {
     Thresh = loadImage("Thresh.jpg");
     image(Thresh, 0, 0, 600, 600);
+     textSize(30);
+    text("Click Thresh's Lantern", 180, 263);
   }
 }
