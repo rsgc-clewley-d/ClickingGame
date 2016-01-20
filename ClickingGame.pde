@@ -5,6 +5,7 @@ float nunu = 1;
 PImage background;
 PImage Thresh;
 PImage Zed;
+PImage Azir;
 void setup() {
   frameRate(20);
   yasuo = loadImage("Yasuo.jpg");
@@ -22,6 +23,7 @@ void draw() {
     text("Zed", 20, 160);
     text("Thresh", 20, 220);
     text("Yasuo", 20, 280);
+    text("Azir", 20, 340);
     fill(255);
   }
   fill(0); 
@@ -56,6 +58,10 @@ void mouseClicked() {
    textSize(40);
    text("Good Job!", 210, 350);
   }
+  else if (mouseX > 78 && mouseX < 218 && mouseY > 0 && mouseY < 303) {
+   textSize(40);
+   text("Good Job!", 210, 350);
+  }
 }
 void mousePressed() { 
   // if your mouse is within the x and y values of the image, switch the background image. 
@@ -74,5 +80,12 @@ void mousePressed() {
     image(Thresh, 0, 0, 600, 600);
      textSize(30);
     text("Click Thresh's Lantern", 180, 263);
+  }
+  else if (mouseX > 20 && mouseX < 50 && mouseY > 321 && mouseY < 343) {
+    Azir = loadImage("Azir.jpg");
+    image(Azir, 0, 0, 600, 600);
+    textSize(30);
+    fill(0);
+    text("Click Azir's Staff", 180, 50);
   }
 }
